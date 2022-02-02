@@ -32,7 +32,7 @@ Crie uma aplicação que mostrara Eventos proximos para estudantes, empresas, cu
 
 ### 🖥 Consideraçoes finais 
 
-Projeto feito em React.JS para um teste tecnico para a empresa <a href="https://mblabs.com.br/">
+Projeto feito em React.JS para um teste tecnico para a empresa <a href="https://mblabs.com.br/"> MB Labs </a>
 
 Qualquer duvida entre em contato por :
 <div>

@@ -21,6 +21,7 @@ export default () => {
                         <a href="#home">Home</a>
                         <a href="#eventos">Eventos</a>
                         <a href="#categorias">Categorias</a>
+                        <a href="##newEvent">Novos Eventos</a>
                     </div>
                     <div className="item">
                         <h3>Siga-nos</h3>

@@ -6,6 +6,7 @@ import '../styles/components/Header.css'
 export default () => {
     const {register, handleSubmit} = useForm()
     const addPost = data => console.log(data)
+    
     useEffect(() => {
         let searchBtn = document.querySelector('#search-btn');
         let searchBar = document.querySelector('.search-bar-container');

@@ -1,8 +1,11 @@
+import { useForm } from 'react-hook-form';
 import React, { useEffect } from 'react';
 import '../styles/components/Header.css'
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-
+    const {register, handleSubmit} = useForm()
+    const addPost = data => console.log(data)
     useEffect(() => {
         let searchBtn = document.querySelector('#search-btn');
         let searchBar = document.querySelector('.search-bar-container');
@@ -54,6 +57,9 @@ export default () => {
         loginFormCloseButton.addEventListener("click", () => {
             loginForm.classList.remove("active");
         })
+        
+       
+        
 
     }, []);
     return (
@@ -81,15 +87,15 @@ export default () => {
             </header>
             <div class="login-form-container">
                 <i class="fas fa-times" id="form-close"></i>
-                <form>
+                <form onSubmit={handleSubmit(addPost)}>
                     <h3>login</h3>
-                    <input type="email" class="item" placeholder="seu email" />
-                    <input type="password" class="item" placeholder="sua senha" />
-                    <input type="submit" value="entre agora" class="btn" id="login-form-submit-button"/>
+                    <input type="email" class="item" placeholder="seu email" {...register("UserMail")} />
+                    <input type="password" class="item" placeholder="sua senha" {...register("password")} />
+                    <input type="submit" value="entre agora" class="btn" id="login-form-submit-button" />
                     <input type="checkbox" id="remember" />
                     <label for="remember">Remember-me</label>
-                    <p>Forget your password?<a href="#">Click Here</a></p>
-                    <p>Don't have an account? <a href="#">Signup now</a></p>
+                    <p>Forget your password? <a href="#"> Click Here</a></p>
+                    <p>Don't have an account? <a href="#"> Signup now</a></p>
                 </form>
             </div>
         </>

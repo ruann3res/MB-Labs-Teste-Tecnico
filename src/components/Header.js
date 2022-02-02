@@ -67,7 +67,7 @@ export default () => {
             <header>
                 <div id="menu-bar" class="fas fa-bars"></div>
 
-                <div className="logo">ticket.com</div>
+                <div className="logo">MB Tickets</div>
 
                     <nav className="navbar">
                         <a href="#home">Home</a>

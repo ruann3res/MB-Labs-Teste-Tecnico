@@ -1,0 +1,48 @@
+.footer{
+  background:rgb(0, 0, 0);
+  cursor:default;
+}
+  
+.footer .container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+  
+.footer .container .item{
+  padding:1rem 0;
+  flex:1 1 25rem;
+}
+  
+.footer .container .item h3{
+  font-size: 2.5rem;
+  padding:.7rem 0;
+  color:#fff;
+}
+  
+.footer .container .item p{
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#fff;
+}
+  
+.footer .container .item a{
+  display: block;
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#fff;
+}
+  
+.footer .container .item a:hover{
+  color:#ffa500;
+  text-decoration: underline;
+}
+  
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}

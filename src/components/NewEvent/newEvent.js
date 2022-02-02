@@ -7,7 +7,7 @@ export default () => {
     const { register, handleSubmit } = useForm()
     const addPost = data => console.log(data)
     return (
-        <section>
+        <section id="newEvent">
 
             <main>
                 <div className="card-post">
@@ -17,35 +17,35 @@ export default () => {
                         <form onSubmit={handleSubmit(addPost)}>
                             <div className="fields">
                                 <label className="labelsEvents"> Nome do Evento </label>
-                                <input type="text" required id="NewEventInput" name="EventName" {...register("EventName")} />
+                                <input type="text" required className="NewEventInput" name="EventName" {...register("EventName")} />
                             </div>
                             <div className="fields">
                                 <label className="labelsEvents">Data Do evento</label>
-                                <input type="date" required id="NewEventInput" name="DateEvent" {...register("DateEvent")} />
+                                <input type="date" required className="NewEventInput" name="DateEvent" {...register("DateEvent")} />
                             </div>
                             <div className="fields">
                                 <label className="labelsEvents">CEP do Evento</label>
-                                <input type="number" required id="NewEventInput" name="CepEvent" {...register("CepEvent")} />
+                                <input type="number" required className="NewEventInput" name="CepEvent" {...register("CepEvent")} />
                             </div>
                             <div className="fields">
                                 <label className="labelsEvents">Descricao do evento</label>
-                                <textarea id="NewEventInput" required name="Description" {...register("Description")} />
+                                <textarea className="NewEventInput" required name="Description" {...register("Description")} />
                             </div>
                             <div className="fields">
                                 <label className="labelsEvents">Imagem do Evento</label>
-                                <input type="file" required accept="image/png, image/jpeg" single id="NewEventInput" name="image" {...register("Image")} />
+                                <input type="file" required accept="image/png, image/jpeg" single className="NewEventInput" name="image" {...register("Image")} />
                             </div>
                             <div className="fields">
                                 <label className="labelsEvents">Nome do organizador</label>
-                                <input type="text" required id="NewEventInput" name="EventManager" {...register("EventManager")} />
+                                <input type="text" required className="NewEventInput" name="EventManager" {...register("EventManager")} />
                             </div>
                             <div className="fields">
                                 <label className="labelsEvents">Email para contato</label>
-                                <input type="mail" required="@" id="NewEventInput" name="ManagerMail" {...register("IManagerMail")} />
+                                <input type="mail" required="@" className="NewEventInput" name="ManagerMail" {...register("IManagerMail")} />
                             </div>
                             <div className="fields">
                                 <label className="labelsEvents">Telefone para contato</label>
-                                <input type="number" id="NewEventInput" required name="ManagerTel" {...register("ManagerTel")} />
+                                <input type="number" className="NewEventInput" required name="ManagerTel" {...register("ManagerTel")} />
                             </div>
                             <div ClassName="btn-post">
                        <button id="botaoNewEvents" type="submit">ENVIAR EMAIL</button>

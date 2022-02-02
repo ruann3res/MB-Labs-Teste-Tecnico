@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  background: url('/src/images/fundo4.jpg') center center/cover;
+  background: url('/src/images/imagem.jpg') center center/cover;
   cursor:default;
 }
   

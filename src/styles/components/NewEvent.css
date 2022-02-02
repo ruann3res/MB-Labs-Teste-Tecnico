@@ -28,7 +28,7 @@ margin-left: 0px;
     align-items: center;
     margin-bottom: 10px;;
 }
-#NewEventInput{
+.NewEventInput{
     margin-top: 10px;
     padding:.8rem 3rem;
     border:.2rem solid #ffa500;

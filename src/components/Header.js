@@ -73,6 +73,7 @@ export default () => {
                         <a href="#home">Home</a>
                         <a href="#categorias">Categorias</a>
                         <a href="#eventos">Eventos</a>
+                        <a href="#newEvent">Novos Eventos</a>
                     </nav>
 
                     <div className="icons">
@@ -89,9 +90,9 @@ export default () => {
                 <i class="fas fa-times" id="form-close"></i>
                 <form onSubmit={handleSubmit(addPost)}>
                     <h3>login</h3>
-                    <input type="email" class="item" placeholder="seu email" {...register("UserMail")} />
-                    <input type="password" class="item" placeholder="sua senha" {...register("password")} />
-                    <input type="submit" value="entre agora" class="btn" id="login-form-submit-button" />
+                    <input type="email" className="item" placeholder="seu email" {...register("UserMail")} />
+                    <input type="password" className="item" placeholder="sua senha" {...register("password")} />
+                    <button type="submit"  className="btn" id="login-form-submit-button">entre agora</button>
                     <input type="checkbox" id="remember" />
                     <label for="remember">Remember-me</label>
                     <p>Forget your password? <a href="#"> Click Here</a></p>
